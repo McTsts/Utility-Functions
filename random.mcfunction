@@ -15,6 +15,7 @@ kill @e[tag=random,type=area_effect_cloud]
 ## scoreboard players set r Random <r>
 ## function util:random
 ##
+##
 ## Usage
 ## Returns a value n Random, between 1 and r
 ##
