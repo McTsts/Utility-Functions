@@ -1,3 +1,9 @@
+###
+### NAME: random.mcfunction
+### TASK: Randomization
+### Made by McTsts
+###
+
 ##
 ## Setup
 ## /scoreboard objectives add Random dummy
