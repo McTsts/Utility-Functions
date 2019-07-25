@@ -6,8 +6,8 @@
 
 ## 
 ## Setup
-## /scoreboard objectives create Random dummy
-## /scoreboard objectives create Const dummy
+## /scoreboard objectives add Random dummy
+## /scoreboard objectives add Const dummy
 ## /scoreboard players set seed Random <seed value>
 ## /scoreboard players set 353 Const 353
 ## /scoreboard players set 1807 Const 1807
