@@ -21,6 +21,7 @@ scoreboard players add n Random 1
 ## scoreboard players set r Random <r>
 ## function util:randomish
 ##
+##
 ## Usage
 ## Returns a value n Random, between 1 and r
 ##
