@@ -1,3 +1,10 @@
+###
+### NAME: effect.mcfunction
+### TASK: /effect with less limitations
+### Made by McTsts
+###
+
+
 ##
 ## Applies effects without limitations from /effect
 ##
