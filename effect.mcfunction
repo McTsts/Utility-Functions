@@ -7,6 +7,7 @@
 ## /scoreboard objectives set 10 Const 10
 ## /scoreboard objectives set 100 Const 100
 ##
+
 # Summon AEC
 execute at @s run summon minecraft:area_effect_cloud ~ ~-0.25 ~ {Particle:"minecraft:block minecraft:air",ReapplicationDelay:0,Age:-1,Radius:0.5f,RadiusPerTick:0f,RadiusOnUse:-0.5f,Duration:2,WaitTime:0,Effects:[{Id:1b,Amplifier:1b,Duration:1,ShowParticles:1b,ShowIcon:1b,Ambient:0b}],Tags:["utilEffectCloud"]}
 # Show Particles | Show Icon | Ambient
@@ -41,13 +42,18 @@ tag @e[type=area_effect_cloud] remove utilEffectCloud
 ## /scoreboard players set Amplifier Effect 2
 ## /scoreboard players set Duration Effect 600
 ## /scoreboard players set SP_SI_A Effect 010
+## /execute as @a run function util:effect
 ## Id = 5 = Strength
 ## Amplifier = 2 = Strength III
 ## Duration = 600t = 30s = Strength III for 30 seconds
 ## SP_SI_A = 010; SP = 0, SI = 1, A = 0; ShowParticles = 0, ShowIcon = 1, Ambient = 0
 ##
-## Gives Strength III for 30 seconds without particles, but shows the icon
+## Gives Strength III for 30 seconds to all players without particles, but shows the icon
 ##
+##
+## Usage
+##
+## Id/Amplifier/Duration are set like in /effect
 ## SP_SI_A is a list of 3 booleans for: Show Particles (SP), ShowIcon (SI) and Ambient (A) 
 ##
 ## ShowParticles: Removes particles if set to 0
