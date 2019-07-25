@@ -1,3 +1,9 @@
+###
+### NAME: randomish.mcfunction
+### TASK: Randomization with good performance
+### Made by McTsts & federick
+###
+
 ## 
 ## Setup
 ## /scoreboard objectives create Random dummy
