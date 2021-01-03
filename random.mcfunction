@@ -9,11 +9,11 @@
 ## /scoreboard objectives add Random dummy
 ##
 
-summon area_effect_cloud ~ 0 ~ {Tags:["random"]}
-execute store result score n Random run data get entity @e[tag=random,limit=1,type=area_effect_cloud] UUIDMost 0.00000000023283064365386962890625
+summon area_effect_cloud ~ 0 ~ {Tags:["utilRandom"]}
+execute store result score n Random run data get entity @e[tag=utilRandom,limit=1,type=area_effect_cloud] UUID[0]
 scoreboard players operation n Random %= r Random
 scoreboard players add n Random 1
-kill @e[tag=random,type=area_effect_cloud]
+kill @e[tag=utilRandom,type=area_effect_cloud,limit=1]
 
 ##
 ## Example Usage
