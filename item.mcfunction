@@ -1,4 +1,13 @@
-# Summons an item with a preset Motion, to counter the weird stutter that happens when updating item Motion after it has been spawned
+###
+### NAME: item.mcfunction
+### TASK: Summons an item with a preset Motion, to counter the weird stutter that happens when updating item Motion after it has been spawned
+### Made by McTsts
+###
+
+## Usage
+## Set x/y/z on utilItem to a value from 0 to 10. 0-4 are negative movements, 5 is no movement and 6-10 is positive movement on that axis.
+
+
 execute if score x utilItem matches 0 if score y utilItem matches 0 if score z utilItem matches 0 run summon minecraft:item ~ ~ ~ {Item:{id:"black_carpet",Count:1},Tags:["newUtilItem","utilItem"],NoGravity:1,Motion:[-0.5,-0.5,-0.5]}
 execute if score x utilItem matches 0 if score y utilItem matches 0 if score z utilItem matches 1 run summon minecraft:item ~ ~ ~ {Item:{id:"black_carpet",Count:1},Tags:["newUtilItem","utilItem"],NoGravity:1,Motion:[-0.5,-0.5,-0.4]}
 execute if score x utilItem matches 0 if score y utilItem matches 0 if score z utilItem matches 2 run summon minecraft:item ~ ~ ~ {Item:{id:"black_carpet",Count:1},Tags:["newUtilItem","utilItem"],NoGravity:1,Motion:[-0.5,-0.5,-0.3]}
