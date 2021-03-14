@@ -2,11 +2,11 @@ execute store result entity @s Rotation[0] float 0.001 run scoreboard players ge
 data modify entity @s Rotation[1] set value 0.0f
 
 # cos
-execute as @s positioned 0.0 0.0 0.0 rotated as @s run tp @s ^ ^ ^1
+execute positioned 0.0 0.0 0.0 rotated as @s run tp @s ^ ^ ^1
 execute store result score cos sin_cos run data get entity @s Pos[2] 1000
 
 # sin
-execute as @s positioned 0.0 0.0 0.0 rotated as @s run tp @s ^ ^ ^-1
+execute positioned 0.0 0.0 0.0 rotated as @s run tp @s ^ ^ ^-1
 execute store result score sin sin_cos run data get entity @s Pos[0] 1000
 
 # end
